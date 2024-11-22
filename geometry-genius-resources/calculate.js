@@ -27,6 +27,27 @@ function calculateRhombusArea() {
   setInnerTextById("rhombus-area", area);
 }
 
+// calculation Pentagon
+
+function calculatePentagonArea() {
+  const p = getInputValueById("pentagon-length");
+  const b = getInputValueById("pentagon-width");
+  const area = 0.5 * p * b
+  
+  setInnerTextById("pentagon-area", area);
+}
+
+// calculation Ellipse
+
+function calculateEllipseArea() {
+  const a = getInputValueById("ellipse-length");
+  const b = getInputValueById("ellipse-width");
+  const area = parseFloat((3.1416 * a * b).toFixed(2)); 
+
+  setInnerTextById("ellipse-area",area);
+}
+
+
 
 function getInputValueById(inputFieldId) {
   const inputField = document.getElementById(inputFieldId);
