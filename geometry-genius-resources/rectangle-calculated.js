@@ -20,4 +20,6 @@ function calculateRectangleArea() {
   
   const areaDisplay = document.getElementById("ractangle-area");
   areaDisplay.innerText = area;
+  document.querySelector(".calculate").innerText =
+    "Calculate Rectangle: " + area + ` cm 2`;
 }

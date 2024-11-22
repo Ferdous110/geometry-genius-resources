@@ -23,6 +23,9 @@ function calculateTriangleArea() {
   const triangleAreaSpan = document.getElementById("triangle-area");
   triangleAreaSpan.innerText = area;
 
+  document.querySelector(".calculate").innerText =
+    "Calculate Triangle: " + area + ` cm `;
+
 
 
 }

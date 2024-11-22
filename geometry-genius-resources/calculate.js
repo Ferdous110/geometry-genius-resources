@@ -13,10 +13,13 @@ function calculateParallelogramArea() {
 
   setInnerTextById('parallelogram-area', area);
 
+  document.querySelector(".calculate").innerText =
+    "Calculate Parallelogram:  " + area + 'cm';
+
 }
 
 
-// calculata calculateRhombusArea
+//  calculate Rhombus Area
 
 function calculateRhombusArea() {
   const b1 = getInputValueById("rhombus-length");
@@ -24,7 +27,10 @@ function calculateRhombusArea() {
   const b2 = getInputValueById("rhombus-width");
 
   const area = 0.5 * b1 * b2;
-  setInnerTextById("rhombus-area", area);
+  setInnerTextById("rhombus-area", area );
+
+  document.querySelector(".calculate").innerText =
+    "Calculate Rhombus:  " + area + "cm";
 }
 
 // calculation Pentagon
@@ -35,6 +41,11 @@ function calculatePentagonArea() {
   const area = 0.5 * p * b
   
   setInnerTextById("pentagon-area", area);
+
+ document.querySelector(".calculate").innerText =
+   "Calculate Pentagon: " + area + "cm";
+  
+ 
 }
 
 // calculation Ellipse
@@ -44,7 +55,10 @@ function calculateEllipseArea() {
   const b = getInputValueById("ellipse-width");
   const area = parseFloat((3.1416 * a * b).toFixed(2)); 
 
-  setInnerTextById("ellipse-area",area);
+  setInnerTextById("ellipse-area", area + "cm");
+  
+  document.querySelector(".calculate").innerText =
+    "Calculate Ellipse: " + area + "cm";
 }
 
 
