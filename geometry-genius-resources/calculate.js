@@ -1,4 +1,5 @@
 
+// calculate Parallelogram 
 function calculateParallelogramArea() { 
   
   const base = getInputValueById("parallelogram-length");
@@ -12,6 +13,18 @@ function calculateParallelogramArea() {
 
   setInnerTextById('parallelogram-area', area);
 
+}
+
+
+// calculata calculateRhombusArea
+
+function calculateRhombusArea() {
+  const b1 = getInputValueById("rhombus-length");
+
+  const b2 = getInputValueById("rhombus-width");
+
+  const area = 0.5 * b1 * b2;
+  setInnerTextById("rhombus-area", area);
 }
 
 
